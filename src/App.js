@@ -11,7 +11,6 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      s
       <Container>
         <h1 className="main-title">Frontend Developer</h1>
         <h2 className="sub-title">
