@@ -1,38 +1,273 @@
 .App {
   text-align: center;
+  margin-top: 10%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main-title {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sub-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size:  1.25rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.avatar {
+  width: 300px;
+  margin-top: 30px;
+}
+
+.intro-div {
+  background-color: #FF5C2C;
+  margin-top: 50px;
+  padding-top: 40px;
+  padding-bottom: 20rem;
+}
+
+.intro-title {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.intro-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size:  1.25rem;
+  color: #ffffff;
+}
+
+.skills-box {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: -14rem;
+  margin-bottom: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.skills-container {
+  border: 1px solid #E6ECF8;
+  border-radius: 12px;
+  width: 90%;
+  background-color: #ffffff;
+  padding-top: 2rem;
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  display: flex;
+  justify-content: space-evenly;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.skills-container h1 {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.5rem !important;
+;
+}
+
+.langs-title {
+  margin-top: -20px;
+  margin-bottom: 3rem;
+}
+
+
+.skills-container h2 {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #58B3A3;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.skills-container h3 {
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.tools-title {
+  margin-top: -5px;
+  margin-bottom: 2.6rem;
+}
+
+.langs-img {
+  width: 5rem;
+}
+
+.tools-img {
+  width: 3.5rem;
+  margin-top: 15px;
+}
+
+.grid-border-right {
+  border-right: 1px solid #E6ECF8;
+}
+
+.left-grid, .right-grid {
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.logos-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.contact-me {
+  background-color: #68D0BE;
+}
+
+.ctr-logo {
+  width: 70px;
+  border-radius: 50%;
+}
+
+.sadeem-logo {
+  width: 100px;
+}
+
+.contact-me-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  border-radius: 12px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.contact-title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.contact-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 0.5rem;
+}
+
+.gmail-box {
+  background-color: #68D0BE;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.gmail-box:hover {
+  background-color: #FF5C2C;
+}
+
+.gmail {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+
+.footer {
+  background-color: #FF5C2C;
+  width: 100%;
+  height: 290px;
+  margin-bottom:0;
+  margin-top: -150px;
+  display: flex;
+  justify-content: center;
+}
+
+.icons-container {
+  padding-top: 10rem !important;
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media only screen and (max-width: 830px) {
+  .App {
+    margin-top: 20%;
   }
-  to {
-    transform: rotate(360deg);
+  .contact-me {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contact-title {
+    font-size: 1.4rem;
+  }
+  .contact-text {
+    width: 140px;
+    font-size: 14px;
+    line-height: 1rem;
+  }
+  .gmail {
+    font-size: 1rem;
+  }
+  .icons-container {
+    width: 40%;
+  }
+  
+}
+
+@media only screen and (max-width: 450px) {
+  .App {
+    margin-top: 40%;
+  }
+  .grid-border-right {
+    border-right: none;
+    border-bottom: 1px solid #E6ECF8;
+  }
+  .skills-container {
+    flex-wrap: wrap;
+  }
+  .right-grid {
+    padding-top: 1.5rem;
+  }
+  .logos-container {
+    display: block;
+  }
+  .ctr-logo {
+    margin-bottom: 1.5rem;
+  }
+  .sadeem-logo {
+    margin-bottom: 1.5rem;
+  }
+  .contact-me {
+    display: block;
+  }
+  .contact-title {
+    font-size: 2rem;
+  }
+  .contact-text-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  .contact-text {
+    width: 250px;
+    font-size: 18px;
+    line-height: 1rem;
+  }
+  .gmail-box {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 30px;
+  }
+  .icons-container {
+    width: 60%;
   }
 }
+
