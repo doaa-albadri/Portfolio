@@ -5,7 +5,13 @@ import tools from "./assets/images/tools.png";
 import ION from "./assets/images/ion-logo.png";
 import CTR from "./assets/images/ctr-logo.png";
 import SADEEM from "./assets/images/sadeem-logo.png";
-import { Facebook, Instagram, LinkedIn, Twitter } from "@mui/icons-material";
+import {
+  Facebook,
+  Instagram,
+  LinkedIn,
+  Twitter,
+  GitHub,
+} from "@mui/icons-material";
 import "./App.css";
 
 function App() {
@@ -24,7 +30,7 @@ function App() {
           <h2 className="intro-text">
             My web development journey started out of curiosity and interest,
             and that's why I love what I do today. I have two years of
-            experience and practice in the field. I'm a fast-learner, and
+            experience and practice in the field. I'm a fast-learner, and I'm
             passionate about acquiring and improving skills while providing
             services for clients.
           </h2>
@@ -100,6 +106,9 @@ function App() {
         <div className="icons-container">
           <a href="https://www.linkedin.com/in/doaa-albadri-636a08199/">
             <LinkedIn fontSize="large" style={{ color: "white" }} />
+          </a>
+          <a href="https://github.com/doaa-albadri">
+            <GitHub fontSize="large" style={{ color: "white" }} />
           </a>
           <a href="https://www.facebook.com/profile.php?id=100010698228804">
             <Facebook fontSize="large" style={{ color: "white" }} />
