@@ -5,6 +5,8 @@ import tools from "./assets/images/tools.png";
 import ION from "./assets/images/ion-logo.png";
 import CTR from "./assets/images/ctr-logo.png";
 import SADEEM from "./assets/images/sadeem-logo.png";
+import ION_WEBSITE from "./assets/images/ion-website.png";
+import HD_GROUP from "./assets/images/hdgroup.png";
 import {
   Facebook,
   Instagram,
@@ -36,57 +38,96 @@ function App() {
           </h2>
         </Container>
       </div>
+      <div className="companies-box">
+        <div className="companies">
+          <h1 className="main-title">Companies I've worked with:</h1>
+
+          <div className="logos-container">
+            <div>
+              <a href="https://ctr.ly/">
+                <img src={CTR} className="ctr-logo" />
+              </a>
+            </div>
+            <div>
+              <a href="https://sadeem-tech.com/">
+                <img src={SADEEM} className="sadeem-logo" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.ion.ly/">
+                <img src={ION} className="ion-logo" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="skills-box">
         <div className="skills-container">
           <div className="grid-border-right left-grid">
             <img src={langs} className="langs-img" />
-            <h1 className="langs-title">Languages</h1>
+            <h1 className="langs-title">Skills</h1>
             <h3>
               I like the mix of logic and creativity frontend development has to
               offer.
             </h3>
-            <h2>Here are the languages I speak:</h2>
+            <h2>Languages:</h2>
             <h3>HTML</h3>
             <h3>CSS</h3>
             <h3>JavaScript</h3>
             <h3>TypeScript</h3>
-            <h2>What JavaScript framework I use:</h2>
+            <h2>CSS frameworks:</h2>
+            <h3>Bootstrap</h3>
+            <h3>Material-UI</h3>
+            <h3>TailwindCSS</h3>
+            <h2>JavaScript framework:</h2>
             <h3>React</h3>
           </div>
 
           <div className="right-grid">
             <img src={tools} className="tools-img" />
-            <h1 className="tools-title">Tools</h1>
+            <h1 className="tools-title">Experience</h1>
             <h3>
-              I enjoy using different dev tools and bringing ideas to life in
+              I enjoy tackling different projects and bringing ideas to life in
               the browser.
             </h3>
-            <h2>Here are the dev tools I work with:</h2>
-            <h3>Visual Studio Code</h3>
-            <h3>Bootstrap</h3>
-            <h3>Material-UI</h3>
-            <h3>Github</h3>
+            <h2>CTR | Frontend Web Dveloper</h2>
+            <h6>August 2021 - August 2022 | Office-Remote Hybrid</h6>
+            <h5>- Developed an ecommerce admin dashboard using React.</h5>
+            <h5>
+              - Worked on a corporate website for HD Investment Group using
+              Wordpress.
+            </h5>
+            <h2>Sadeem | Frontend Web Dveloper</h2>
+            <h6>July 2021 - August 2022 | Remote</h6>
+            <h5>- Developed an admin panel for a mobile app using React.</h5>
+            <h2>Ion | Frontend Web Dveloper</h2>
+            <h6>July 2021 - Present | Office</h6>
+            <h5>
+              - Developed the official website for Ion Telecom and Technology
+              using Wordpress.
+            </h5>
           </div>
         </div>
       </div>
-      <h1 className="main-title">Companies I've worked with:</h1>
+
+      <h1 className="main-title">Public Projects:</h1>
+
       <div className="logos-container">
         <div>
-          <a href="https://ctr.ly/">
-            <img src={CTR} className="ctr-logo" />
-          </a>
-        </div>
-        <div>
-          <a href="https://sadeem-tech.com/">
-            <img src={SADEEM} className="sadeem-logo" />
+          <a href="https://hdgroup.ly/">
+            <img src={HD_GROUP} className="hd-website" />
           </a>
         </div>
         <div>
           <a href="https://www.ion.ly/">
-            <img src={ION} className="ion-logo" />
+            <img src={ION_WEBSITE} className="ion-website" />
           </a>
         </div>
       </div>
+
+      <div className="logos-container"></div>
+
       <div className="contact-me-container">
         <div className="contact-me">
           <h1 className="contact-title">Let's get to work!</h1>

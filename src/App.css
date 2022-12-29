@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
   margin-top: 10%;
@@ -23,7 +24,7 @@
   background-color: #4da797;
   margin-top: 50px;
   padding-top: 40px;
-  padding-bottom: 20rem;
+  padding-bottom: 11rem;
 }
 
 .intro-title {
@@ -39,11 +40,27 @@
   color: #ffffff;
 }
 
+.companies-box {
+  display: flex;
+  justify-content: center;
+  margin-top: -8rem;
+  margin-bottom: 50px;
+}
+
+.companies {
+  display: block;
+  background-color: white;
+  width: 75%;
+  border: 1px solid #E6ECF8;
+  border-radius: 12px;
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+}
+
 .skills-box {
   display: flex;
   justify-content: center;
-  margin-top: -14rem;
-  margin-bottom: 100px;
+  /* margin-top: -14rem; */
+  margin-bottom: 50px;
 }
 
 .skills-container {
@@ -85,6 +102,18 @@
   font-weight: 500;
 }
 
+.skills-container h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-bottom: -1.3rem;
+}
+
+.skills-container h6 {
+  color: grey;
+  font-weight: 400;
+  margin-top: -1.7rem;
+}
+
 .tools-title {
   margin-top: -5px;
   margin-bottom: 2.6rem;
@@ -114,8 +143,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .contact-me {
@@ -129,6 +157,14 @@
 
 .sadeem-logo {
   width: 100px;
+}
+
+.hd-website {
+  width: 200px;
+}
+
+.ion-website {
+width: 130px;
 }
 
 .contact-me-container {
