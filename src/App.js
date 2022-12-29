@@ -1,7 +1,5 @@
 import { Container } from "@mui/material";
 import avatar from "./assets/images/avatar.jpg";
-import langs from "./assets/images/langs.png";
-import tools from "./assets/images/tools.png";
 import ION from "./assets/images/ion-logo.png";
 import CTR from "./assets/images/ctr-logo.png";
 import SADEEM from "./assets/images/sadeem-logo.png";
@@ -65,8 +63,7 @@ function App() {
       <div className="skills-box">
         <div className="skills-container">
           <div className="grid-border-right left-grid">
-            <img src={langs} className="langs-img" />
-            <h1 className="langs-title">Skills</h1>
+            <h1>Skills</h1>
             <h3>
               I like the mix of logic and creativity frontend development has to
               offer.
@@ -85,8 +82,7 @@ function App() {
           </div>
 
           <div className="right-grid">
-            <img src={tools} className="tools-img" />
-            <h1 className="tools-title">Experience</h1>
+            <h1>Experience</h1>
             <h3>
               I enjoy tackling different projects and bringing ideas to life in
               the browser.
