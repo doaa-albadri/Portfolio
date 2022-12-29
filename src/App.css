@@ -133,9 +133,11 @@
 
 .projects-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   margin-bottom: 2rem;
+  flex-direction: row;
+  column-gap: 8em;
 }
 
 .contact-me {
@@ -224,6 +226,25 @@ width: 130px;
   justify-content: space-between;
 }
 
+.project-card {
+  border: 1px solid #dee4f0;
+  height: 140px;
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+
+}
+
+.project-card:hover {
+  transform: scale(1.1);
+  transition: all 1s;
+  box-shadow: 0 10px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+
+}
+
+
 
 @media only screen and (max-width: 830px) {
   .App {
@@ -265,7 +286,10 @@ width: 130px;
     padding-top: 1.5rem;
   }
   .logos-container {
-    display: block;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0.5rem;
+    align-items: center;
   }
   .ctr-logo {
     margin-bottom: 1.5rem;
@@ -303,6 +327,7 @@ width: 130px;
   }
   .ion-logo {
     width: 73px;
+    margin-bottom: 24px;
   }
   .ion-website {
     width: 100px;
@@ -312,6 +337,14 @@ width: 130px;
   }
   .right-grid {
     padding-bottom: 4rem;
+  }
+  .companies {
+    width: 90%;
+  }
+  .projects-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 30px;
   }
 }
 

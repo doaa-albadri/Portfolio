@@ -110,15 +110,19 @@ function App() {
       <h1 className="main-title">Public Projects:</h1>
 
       <div className="projects-container">
-        <div>
-          <a href="https://hdgroup.ly/">
-            <img src={HD_GROUP} className="hd-website" />
-          </a>
+        <div className="project-card">
+          <div>
+            <a href="https://hdgroup.ly/">
+              <img src={HD_GROUP} className="hd-website" />
+            </a>
+          </div>
         </div>
-        <div>
-          <a href="https://www.ion.ly/">
-            <img src={ION_WEBSITE} className="ion-website" />
-          </a>
+        <div className="project-card">
+          <div>
+            <a href="https://www.ion.ly/">
+              <img src={ION_WEBSITE} className="ion-website" />
+            </a>
+          </div>
         </div>
       </div>
 
