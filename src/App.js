@@ -109,7 +109,7 @@ function App() {
 
       <h1 className="main-title">Public Projects:</h1>
 
-      <div className="logos-container">
+      <div className="projects-container">
         <div>
           <a href="https://hdgroup.ly/">
             <img src={HD_GROUP} className="hd-website" />
