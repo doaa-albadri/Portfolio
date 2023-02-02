@@ -4,6 +4,7 @@ import ION from "./assets/images/ion-logo.png";
 import CTR from "./assets/images/ctr-logo.png";
 import SADEEM from "./assets/images/sadeem-logo.png";
 import ION_WEBSITE from "./assets/images/ion-website.png";
+import NP_AQUA from "./assets/images/np-aqua.png";
 import HD_GROUP from "./assets/images/hdgroup.png";
 import {
   Facebook,
@@ -124,6 +125,13 @@ function App() {
             </a>
           </div>
         </div>
+        <div className="project-card">
+          <div>
+            <a href="https://npaqua.ly/">
+              <img src={NP_AQUA} className="np-website" width={230} />
+            </a>
+          </div>
+        </div>
       </div>
 
       <div className="logos-container"></div>
@@ -154,7 +162,7 @@ function App() {
           <a href="https://www.facebook.com/profile.php?id=100010698228804">
             <Facebook fontSize="large" style={{ color: "white" }} />
           </a>
-          <a href="https://twitter.com/DoaaAbdulrahim">
+          <a href="https://twitter.com/DoaaAlbadri_">
             <Twitter fontSize="large" style={{ color: "white" }} />
           </a>
           <a href="https://www.instagram.com/doaa_albadri13/">
