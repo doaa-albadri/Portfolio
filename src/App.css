@@ -1,18 +1,17 @@
-
 .App {
   text-align: center;
   margin-top: 10%;
 }
 
 .main-title {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 2rem;
 }
 
 .sub-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size:  1.25rem;
+  font-size: 1.25rem;
 }
 
 .avatar {
@@ -28,15 +27,15 @@
 }
 
 .intro-title {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 1.5rem;
   color: #ffffff;
 }
 
 .intro-text {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  font-size:  1.25rem;
+  font-size: 1.25rem;
   color: #ffffff;
 }
 
@@ -51,7 +50,7 @@
   display: block;
   background-color: white;
   width: 75%;
-  border: 1px solid #E6ECF8;
+  border: 1px solid #e6ecf8;
   border-radius: 12px;
   box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
 }
@@ -64,7 +63,7 @@
 }
 
 .skills-container {
-  border: 1px solid #E6ECF8;
+  border: 1px solid #e6ecf8;
   border-radius: 12px;
   width: 90%;
   background-color: #ffffff;
@@ -75,11 +74,9 @@
 }
 
 .skills-container h1 {
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
   font-size: 1.5rem !important;
-;
 }
-
 
 .skills-container h1 {
   margin-bottom: 2rem;
@@ -87,22 +84,21 @@
 
 .skills-container h2 {
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
-  color: #4da797
-  ;
+  color: #4da797;
   margin-top: 3rem;
   margin-bottom: 2rem;
 }
 
 .skills-container h3 {
   font-size: 16px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
 .skills-container h5 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   margin-bottom: -1.3rem;
 }
@@ -114,14 +110,15 @@
 }
 
 .grid-border-right {
-  border-right: 1px solid #E6ECF8;
+  border-right: 1px solid #e6ecf8;
 }
 
-.left-grid, .right-grid {
+.left-grid,
+.right-grid {
   padding-bottom: 2rem;
   padding-left: 2rem;
   padding-right: 2.5rem;
-  
+  width: 50%;
 }
 
 .logos-container {
@@ -141,7 +138,7 @@
 }
 
 .contact-me {
-  background-color: #FF5C2C;
+  background-color: #ff5c2c;
 }
 
 .ctr-logo {
@@ -158,7 +155,7 @@
 }
 
 .ion-website {
-width: 130px;
+  width: 130px;
 }
 
 .contact-me-container {
@@ -180,40 +177,37 @@ width: 130px;
 .contact-title {
   color: #ffffff;
   font-size: 2rem;
-  font-family: 'Titillium Web', sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .contact-text {
   color: #ffffff;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 0.5rem;
 }
 
 .gmail-box {
-  background-color: #FF5C2C;
+  background-color: #ff5c2c;
   border: 1px solid #ffffff;
   border-radius: 50px;
   padding-right: 20px;
   padding-left: 20px;
 }
 
-
 .gmail {
   color: #ffffff;
   font-size: 1.1rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
-
 .footer {
-  background-color:   #4da797
-  ;
+  background-color: #4da797;
   width: 100%;
   height: 290px;
-  margin-bottom:0;
+  margin-bottom: 0;
   margin-top: -150px;
   display: flex;
   justify-content: center;
@@ -234,17 +228,13 @@ width: 130px;
   justify-content: center;
   align-items: center;
   border-radius: 12px;
-
 }
 
 .project-card:hover {
   transform: scale(1.1);
   transition: all 1s;
   box-shadow: 0 10px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
-
 }
-
-
 
 @media only screen and (max-width: 830px) {
   .App {
@@ -273,7 +263,10 @@ width: 130px;
     flex-wrap: wrap;
     row-gap: 30px;
   }
-  
+  .left-grid,
+  .right-grid {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -282,7 +275,7 @@ width: 130px;
   }
   .grid-border-right {
     border-right: none;
-    border-bottom: 1px solid #E6ECF8;
+    border-bottom: 1px solid #e6ecf8;
   }
   .skills-container {
     flex-wrap: wrap;
@@ -353,4 +346,3 @@ width: 130px;
     row-gap: 30px;
   }
 }
-
