@@ -78,8 +78,9 @@ function App() {
             <h3>Bootstrap</h3>
             <h3>Material-UI</h3>
             <h3>TailwindCSS</h3>
-            <h2>JavaScript framework:</h2>
+            <h2>JavaScript frameworks:</h2>
             <h3>React</h3>
+            <h3>Angular</h3>
           </div>
 
           <div className="right-grid">
@@ -90,19 +91,39 @@ function App() {
             </h3>
             <h2>CTR | Frontend Web Dveloper</h2>
             <h6>August 2021 - August 2022 | Office-Remote Hybrid</h6>
-            <h5>- Developed an ecommerce admin dashboard using React.</h5>
             <h5>
-              - Worked on a corporate website for HD Investment Group using
+              - Developing an ecommerce admin dashboard using React, TypeScript,
+              and Material UI.
+            </h5>
+            <h5>
+              - Working on a corporate website for HD Investment Group using
               Wordpress.
             </h5>
             <h2>Sadeem | Frontend Web Dveloper</h2>
-            <h6>July 2021 - August 2022 | Remote</h6>
-            <h5>- Developed an admin panel for a mobile app using React.</h5>
+            <h6>July - August 2022 | Remote</h6>
+            <h5>
+              - Developing an admin panel for a mobile app using React,
+              TypeScript, and Material UI.
+            </h5>
             <h2>Ion | Frontend Web Dveloper</h2>
             <h6>July 2021 - Present | Office</h6>
             <h5>
-              - Developed the official website for Ion Telecom and Technology
+              - Developing the official website for Ion Telecom and Technology
               using Wordpress.
+            </h5>
+            <h5>
+              - Working within a team as an Angular developer on a customer
+              portal project.
+            </h5>
+            <h2>HKS Services | Frontend Web Dveloper</h2>
+            <h6>March - May 2023 | Freelance | Remote</h6>
+            <h5>
+              - Working within a team as a React developer on an admin panel for
+              a financial management system.
+            </h5>
+            <h5>
+              - Writing comprehensive unit tests using Jest to ensure the
+              quality and functionality of React components.
             </h5>
           </div>
         </div>
