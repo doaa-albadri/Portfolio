@@ -8,6 +8,7 @@ import NP_AQUA from "./assets/images/np-aqua.png";
 import HD_GROUP from "./assets/images/hdgroup.png";
 import HAFEED from "./assets/images/hafeed-logo.png";
 import TIKA from "./assets/images/tika-logo.png";
+import RAQEEM from "./assets/images/raqeem-logo.jpeg";
 import {
   Facebook,
   Instagram,
@@ -93,14 +94,14 @@ function App() {
               I enjoy tackling different projects and bringing ideas to life in
               the browser.
             </h3>
-            <h2>CTR | Frontend Web Dveloper</h2>
+            <h2>CTR | Frontend Web Developer</h2>
             <h6>August 2021 - August 2022 | Office-Remote Hybrid</h6>
             <h5>- Developing an Ecommerce Admin Dashboard using React.</h5>
             <h5>
               - Developing a corporate website for HD Investment Group using
               Wordpress.
             </h5>
-            <h2>Ion Telecom and Technology | Frontend Web Dveloper</h2>
+            <h2>Ion Telecom and Technology | Frontend Web Developer</h2>
             <h6>July 2021 - Present | Office</h6>
             <h5>
               - Developing the official website for Ion Telecom and Technology
@@ -108,7 +109,7 @@ function App() {
             </h5>
             <h5>- Developing a Flight Booking Dashboard using React.</h5>
             <h5>- Developing a Hotel Management Dashboard using Angular.</h5>
-            <h2>Freelance | Frontend Web Dveloper</h2>
+            <h2>Freelance | Frontend Web Developer</h2>
             <h6>September 2022 - Present</h6>
             <h5>- Developing an Admin Panel for a mobile app using React.</h5>
             <h5>
@@ -153,6 +154,18 @@ function App() {
         </div>
       </div>
       <div className="projects-container">
+        <div className="project-card">
+          <div>
+            <a href="https://raqeem.ly/">
+              <img
+                src={RAQEEM}
+                style={{ borderRadius: "8px" }}
+                className="np-website"
+                width={200}
+              />
+            </a>
+          </div>
+        </div>
         <div className="project-card">
           <div>
             <a href="https://hafeedsoundart.ly/">
