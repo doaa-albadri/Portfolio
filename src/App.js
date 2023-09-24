@@ -3,6 +3,7 @@ import avatar from "./assets/images/avatar.jpg";
 import ION from "./assets/images/ion-logo.png";
 import CTR from "./assets/images/ctr-logo.png";
 import SADEEM from "./assets/images/sadeem-logo.png";
+import HKS from "./assets/images/hks-logo.png";
 import ION_WEBSITE from "./assets/images/ion-website.png";
 import NP_AQUA from "./assets/images/np-aqua.png";
 import HD_GROUP from "./assets/images/hdgroup.png";
@@ -58,6 +59,11 @@ function App() {
             <div>
               <a href="https://www.ion.ly/">
                 <img src={ION} className="ion-logo" />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.hks-services.com/">
+                <img src={HKS} className="sadeem-logo" />
               </a>
             </div>
           </div>
