@@ -10,6 +10,7 @@ import HD_GROUP from "./assets/images/hdgroup.png";
 import HAFEED from "./assets/images/hafeed-logo.png";
 import TIKA from "./assets/images/tika-logo.png";
 import RAQEEM from "./assets/images/raqeem-logo.jpeg";
+import SK_GROUP from "./assets/images/skgroup.png";
 import {
   Facebook,
   Instagram,
@@ -186,8 +187,8 @@ function App() {
         </div>
         <div className="project-card">
           <div>
-            <a href="https://tika-cc.com/">
-              <img src={TIKA} className="np-website" width={150} />
+            <a href="https://skgroup.ly/">
+              <img src={SK_GROUP} className="np-website" width={180} />
             </a>
           </div>
         </div>
