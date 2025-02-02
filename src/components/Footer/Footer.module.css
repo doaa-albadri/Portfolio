@@ -1,0 +1,49 @@
+.github {
+  fill: #94a3b8;
+}
+
+.github:hover {
+  fill: #e2e8f0;
+}
+
+.linkedin {
+  fill: #94a3b8;
+}
+
+.linkedin:hover {
+  fill: #e2e8f0;
+}
+
+.facebook {
+  fill: #94a3b8;
+}
+
+.facebook:hover {
+  fill: #e2e8f0;
+}
+
+.x {
+  fill: #94a3b8;
+}
+
+.x:hover {
+  fill: #e2e8f0;
+}
+
+.box {
+  border-top: 1px solid #cfe4ff2d;
+  padding: 4%;
+  border-radius: 5px;
+  transition: transform 0.6s ease;
+}
+
+.box:hover {
+  box-shadow: rgba(242, 237, 237, 0.2) 4px 6px 11px;
+}
+
+@media only screen and (max-width: 600px) {
+  .social_media {
+    justify-content: center;
+    margin-bottom: 5rem;
+  }
+}

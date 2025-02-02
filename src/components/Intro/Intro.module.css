@@ -1,0 +1,21 @@
+.h5 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #e2e8f0;
+  font-weight: 600;
+}
+
+.h6 {
+  text-align: center;
+  color: #94a3b8;
+}
+
+.intro {
+  padding: 5rem;
+  transition: background-color 0.3s ease;
+}
+
+.h5:hover {
+  text-shadow: rgba(242, 237, 237, 0.2) 4px 6px 11px;
+}

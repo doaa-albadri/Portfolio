@@ -1,236 +1,236 @@
-import { Container } from "@mui/material";
-import avatar from "./assets/images/avatar.jpg";
-import ION from "./assets/images/ion-logo.png";
-import CTR from "./assets/images/ctr-logo.png";
-import SADEEM from "./assets/images/sadeem-logo.png";
-import HKS from "./assets/images/hks-logo.png";
-import ION_WEBSITE from "./assets/images/ion-website.png";
-import NP_AQUA from "./assets/images/np-aqua.png";
-import HD_GROUP from "./assets/images/hdgroup.png";
-import HAFEED from "./assets/images/hafeed-logo.png";
-import TIKA from "./assets/images/tika-logo.png";
-import RAQEEM from "./assets/images/raqeem-logo.jpeg";
-import SK_GROUP from "./assets/images/skgroup.png";
-import {
-  Facebook,
-  Instagram,
-  LinkedIn,
-  Twitter,
-  GitHub,
-} from "@mui/icons-material";
+import { useEffect, useState } from "react";
+
 import "./App.css";
 
+import SplashScreen from "./components/SplashScreen/SplashScreen";
+import Details from "./components/Details/Details";
+import CustomCursor from "./components/CustomCursor/CustomCursor";
+import Intro from "./components/Intro/Intro";
+import Skill from "./components/Skill/Skill";
+import WorkCard from "./components/WorkCard/WorkCard";
+import Project from "./components/Project/Project";
+import Footer from "./components/Footer/Footer";
+
+import HD from "./assets/images/hdgroup.png";
+import SK from "./assets/images/skgroup.png";
+import NP from "./assets/images/np-aqua.png";
+import ION from "./assets/images/ion-logo.png";
+import HAFEED from "./assets/images/hafeed-logo.png";
+import RAQEEM from "./assets/images/raqeem-logo.jpeg";
+
 function App() {
+  const [loading, setLoading] = useState(true);
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+
+    setTimeout(() => {
+      setShowContent(true);
+    }, 5500);
+
+    return () => {};
+  }, []);
+
+  const slideInStyle = {
+    opacity: showContent ? 1 : 0,
+    transform: showContent ? "translateX(0)" : "translateX(-100%)",
+    transition: "opacity 2s ease-in-out, transform 2s ease-in-out",
+    position: "relative",
+  };
+
+  const skills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeSrcipt",
+    "React",
+    "Angular",
+    "WordPress",
+  ];
+
+  const work = [
+    {
+      date: "2021 - 2022",
+      company: "CTR",
+      description:
+        "Developed an Ecommerce Admin Dashboard using React, and developed a corporate website for HD Investment Group using Wordpress.",
+      tools: ["HTML", "CSS", "JavaScript", "React", "WordPress"],
+    },
+    {
+      date: "2022 - Present",
+      company: "Ion Telecom and Technology",
+      description:
+        "Specializing in the development of administrative dashboards tailored for management, booking, and inventory systems, alongsid crafting WordPress-based websites.",
+      tools: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "JavaScript",
+        "React",
+        "Angular",
+        "WordPress",
+      ],
+    },
+    {
+      date: "2022 - Present",
+      company: "Freelance ",
+      description:
+        "Developed an Admin Panel for a mobile app using React and another for a Financial Management System. Additionally, I provide WordPress solutions to clients, offering a comprehensive range of services such as website development, customization, theme integration, and plugin implementation. Furthermore, I have experience in writing comprehensive unit tests to ensure the quality and functionality of components.",
+      tools: ["HTML", "CSS", "JavaScript", "JavaScript", "React", "WordPress"],
+    },
+  ];
+
+  const projects = [
+    { link: "https://hdgroup.ly/", img: HD },
+    { link: "https://www.ion.ly/", img: ION },
+    { link: "https://npaqua.ly/", img: NP },
+    { link: "https://raqeem.ly/", img: RAQEEM },
+    { link: "https://hafeedsoundart.ly/", img: HAFEED },
+    { link: "https://skgroup.ly/", img: SK },
+  ];
+
   return (
-    <div className="App">
-      <Container>
-        <h1 className="main-title">Frontend Developer</h1>
-        <h2 className="sub-title">
-          I'm a passionate developer that loves to code.
-        </h2>
-        <img src={avatar} className="avatar" />
-      </Container>
-      <div className="intro-div">
-        <Container>
-          <h1 className="intro-title">Hi, I'm Doaa. Nice to meet you.</h1>
-          <h2 className="intro-text">
-            My web development journey started out of curiosity and interest,
-            and that's why I love what I do today. I have two years of
-            experience and practice in the field. I'm a fast-learner, and I'm
-            passionate about acquiring and improving skills while providing
-            services for clients.
-          </h2>
-        </Container>
-      </div>
-      <div className="companies-box">
-        <div className="companies">
-          <h1 className="main-title">Companies I've worked with:</h1>
-
-          <div className="logos-container">
+    <main className={` font-sans`}>
+      <style jsx global>{`
+        body {
+          cursor: none;
+        }
+      `}</style>
+      <CustomCursor />
+      {loading ? (
+        <SplashScreen />
+      ) : (
+        <div style={slideInStyle}>
+          <nav
+            className={`flex justify-center items-center gap-5 }`}
+            style={{
+              position: "sticky",
+              top: "0",
+              height: "50px",
+              backgroundColor: "#0f172a",
+              fontWeight: "600",
+              zIndex: "1",
+            }}
+          >
+            <ul className="flex justify-center items-center gap-5 menu">
+              <li>
+                <a href="#intro">Intro</a>
+              </li>
+              <li>
+                <a href="#tools">Tools</a>
+              </li>
+              <li>
+                <a href="#experience">Experience</a>
+              </li>
+              <li>
+                <a href="#projects">Projects</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div
+            id="intro"
+            style={{
+              paddingRight: "10%",
+              paddingLeft: "10%",
+              paddingTop: "15%",
+            }}
+            className="grid md:grid-cols-1 gap-4 mb-20"
+          >
             <div>
-              <a href="https://ctr.ly/">
-                <img src={CTR} className="ctr-logo" />
-              </a>
-            </div>
-            <div>
-              <a href="https://sadeem-tech.com/">
-                <img src={SADEEM} className="sadeem-logo" />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.ion.ly/">
-                <img src={ION} className="ion-logo" />
-              </a>
-            </div>
-            <div>
-              <a href="https://www.hks-services.com/">
-                <img src={HKS} className="sadeem-logo" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="skills-box">
-        <div className="skills-container">
-          <div className="grid-border-right left-grid">
-            <h1>Skills</h1>
-            <h3>
-              I like the mix of logic and creativity frontend development has to
-              offer.
-            </h3>
-            <h2>Languages:</h2>
-            <h3>HTML</h3>
-            <h3>CSS</h3>
-            <h3>JavaScript</h3>
-            <h3>TypeScript</h3>
-            <h2>CSS frameworks:</h2>
-            <h3>Bootstrap</h3>
-            <h3>Material-UI</h3>
-            <h3>TailwindCSS</h3>
-            <h2>JavaScript frameworks:</h2>
-            <h3>React</h3>
-            <h3>Angular</h3>
-            <h2>Other web development platforms:</h2>
-            <h3>WordPress</h3>
-          </div>
-
-          <div className="right-grid">
-            <h1>Experience</h1>
-            <h3>
-              I enjoy tackling different projects and bringing ideas to life in
-              the browser.
-            </h3>
-            <h2>CTR | Frontend Web Developer</h2>
-            <h6>August 2021 - August 2022 | Office-Remote Hybrid</h6>
-            <h5>- Developing an Ecommerce Admin Dashboard using React.</h5>
-            <h5>
-              - Developing a corporate website for HD Investment Group using
-              Wordpress.
-            </h5>
-            <h2>Ion Telecom and Technology | Frontend Web Developer</h2>
-            <h6>July 2021 - Present | Office</h6>
-            <h5>
-              - Developing the official website for Ion Telecom and Technology
-              using Wordpress.
-            </h5>
-            <h5>- Developing a Flight Booking Dashboard using React.</h5>
-            <h5>- Developing a Hotel Management Dashboard using Angular.</h5>
-            <h2>Freelance | Frontend Web Developer</h2>
-            <h6>September 2022 - Present</h6>
-            <h5>- Developing an Admin Panel for a mobile app using React.</h5>
-            <h5>
-              - Developing an Admin Panel for a Financial Management System.
-            </h5>
-            <h5>
-              - Providing WordPress solutions to clients. Offering comprehensive
-              services that include website development, customization, theme
-              integration and plugin implementation.
-            </h5>
-            <h5>
-              - Writing comprehensive unit tests to ensure the quality and
-              functionality of components.
-            </h5>
-          </div>
-        </div>
-      </div>
-
-      <h1 className="main-title">Public Projects:</h1>
-
-      <div className="projects-container">
-        <div className="project-card">
-          <div>
-            <a href="https://hdgroup.ly/">
-              <img src={HD_GROUP} className="hd-website" />
-            </a>
-          </div>
-        </div>
-        <div className="project-card">
-          <div>
-            <a href="https://www.ion.ly/">
-              <img src={ION_WEBSITE} className="ion-website" />
-            </a>
-          </div>
-        </div>
-        <div className="project-card">
-          <div>
-            <a href="https://npaqua.ly/">
-              <img src={NP_AQUA} className="np-website" width={230} />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="projects-container">
-        <div className="project-card">
-          <div>
-            <a href="https://raqeem.ly/">
-              <img
-                src={RAQEEM}
-                style={{ borderRadius: "8px" }}
-                className="np-website"
-                width={200}
-              />
-            </a>
-          </div>
-        </div>
-        <div className="project-card">
-          <div>
-            <a href="https://hafeedsoundart.ly/">
-              <img
-                src={HAFEED}
-                style={{ borderRadius: "8px" }}
-                className="np-website"
-                width={200}
-              />
-            </a>
-          </div>
-        </div>
-        <div className="project-card">
-          <div>
-            <a href="https://skgroup.ly/">
-              <img src={SK_GROUP} className="np-website" width={180} />
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div className="logos-container"></div>
-
-      <div className="contact-me-container">
-        <div className="contact-me">
-          <h1 className="contact-title">Let's get to work!</h1>
-          <div className="contact-text-box">
-            <div>
-              <h2 className="contact-text">Interested in my services?</h2>
-              <h2 className="contact-text">Feel free to contact me!</h2>
+              <Details />
             </div>
           </div>
 
-          <div className="gmail-box">
-            <h2 className="gmail">doaabadri13@gmail.com</h2>
+          <div className="intro-fade-out">
+            <Intro />
+          </div>
+
+          <div id="tools" className="	tools-fade">
+            <h5
+              style={{
+                textAlign: "center",
+                fontSize: "2rem",
+                fontWeight: "600",
+              }}
+              className={`} mb-5 tools`}
+            >
+              Tools
+            </h5>
+            <div className="flex justify-center gap-5 flex-wrap">
+              {skills.map((skill, index) => {
+                return <Skill key={index} skill={skill} />;
+              })}
+            </div>
+          </div>
+
+          <div
+            id="experience"
+            className="mt-20  work-slide-right"
+            style={{ paddingRight: "10%", paddingLeft: "10%" }}
+          >
+            <h5
+              style={{
+                textAlign: "center",
+                fontSize: "2rem",
+                fontWeight: "600",
+              }}
+              className={` mb-5 tools`}
+            >
+              Work Experience
+            </h5>
+            <div className="grid md:grid-cols-2 gap-5">
+              {work.map((item, index) => {
+                return (
+                  <WorkCard
+                    key={index}
+                    date={item.date}
+                    company={item.company}
+                    description={item.description}
+                    tools={item.tools}
+                  />
+                );
+              })}
+            </div>
+          </div>
+
+          <div
+            id="projects"
+            className="mt-20"
+            style={{ paddingRight: "10%", paddingLeft: "10%" }}
+          >
+            <h5
+              style={{
+                textAlign: "center",
+                fontSize: "2rem",
+                fontWeight: "600",
+              }}
+              className={` mb-5 tools`}
+            >
+              Public Projects
+            </h5>
+            <div className="grid md:grid-cols-3 gap-8 mt-10">
+              {projects.map((proj, index) => {
+                return (
+                  <div key={index} className="flex justify-center">
+                    <Project link={proj.link} img={proj.img} />
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+
+          <div id="contact" className="mt-20">
+            <Footer />
           </div>
         </div>
-      </div>
-      <div className="footer">
-        <div className="icons-container">
-          <a href="https://www.linkedin.com/in/doaa-albadri-636a08199/">
-            <LinkedIn fontSize="large" style={{ color: "white" }} />
-          </a>
-          <a href="https://github.com/doaa-albadri">
-            <GitHub fontSize="large" style={{ color: "white" }} />
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=100010698228804">
-            <Facebook fontSize="large" style={{ color: "white" }} />
-          </a>
-          <a href="https://twitter.com/DoaaAlbadri_">
-            <Twitter fontSize="large" style={{ color: "white" }} />
-          </a>
-          <a href="https://www.instagram.com/doaa_albadri13/">
-            <Instagram fontSize="large" style={{ color: "white" }} />
-          </a>
-        </div>
-      </div>
-    </div>
+      )}
+    </main>
   );
 }
 
