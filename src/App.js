@@ -25,11 +25,11 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 2000);
 
     setTimeout(() => {
       setShowContent(true);
-    }, 5500);
+    }, 2500);
 
     return () => {};
   }, []);
@@ -60,7 +60,7 @@ function App() {
       tools: ["HTML", "CSS", "JavaScript", "React", "WordPress"],
     },
     {
-      date: "2022 - Present",
+      date: "2022 - 2024",
       company: "Ion Telecom and Technology",
       description:
         "Specializing in the development of administrative dashboards tailored for management, booking, and inventory systems, alongsid crafting WordPress-based websites.",
@@ -75,20 +75,25 @@ function App() {
       ],
     },
     {
+      date: "2024 - Present",
+      company: "OneAvant Global Solutions",
+      description:
+        "I work on various management platforms, handling different aspects of system functionality, and develop responsive landing pages tailored to diverse project requirements, ensuring optimal user experience across devices.",
+      tools: ["HTML", "CSS", "JavaScript", "React", "Next.js", "Angular"],
+    },
+    {
       date: "2022 - Present",
       company: "Freelance ",
       description:
-        "Developed an Admin Panel for a mobile app using React and another for a Financial Management System. Additionally, I provide WordPress solutions to clients, offering a comprehensive range of services such as website development, customization, theme integration, and plugin implementation. Furthermore, I have experience in writing comprehensive unit tests to ensure the quality and functionality of components.",
+        "I have developed admin panels for mobile apps and financial systems using React and provided WordPress solutions, including development, customization, and plugin integration. I have also written unit tests to ensure component quality.",
       tools: ["HTML", "CSS", "JavaScript", "JavaScript", "React", "WordPress"],
     },
   ];
 
   const projects = [
     { link: "https://hdgroup.ly/", img: HD },
-    { link: "https://www.ion.ly/", img: ION },
-    { link: "https://npaqua.ly/", img: NP },
+    { link: "https://www.ion.ly/", img: ION, size: 50 },
     { link: "https://raqeem.ly/", img: RAQEEM },
-    { link: "https://hafeedsoundart.ly/", img: HAFEED },
     { link: "https://skgroup.ly/", img: SK },
   ];
 
@@ -140,7 +145,7 @@ function App() {
               paddingLeft: "10%",
               paddingTop: "15%",
             }}
-            className="grid md:grid-cols-1 gap-4 mb-20"
+            className="grid md:grid-cols-1 gap-4 mb-10"
           >
             <div>
               <Details />
@@ -184,7 +189,7 @@ function App() {
             >
               Work Experience
             </h5>
-            <div className="grid md:grid-cols-2 gap-5">
+            <div className="grid md:grid-cols-2 gap-10">
               {work.map((item, index) => {
                 return (
                   <WorkCard
@@ -214,11 +219,11 @@ function App() {
             >
               Public Projects
             </h5>
-            <div className="grid md:grid-cols-3 gap-8 mt-10">
+            <div className="grid md:grid-cols-4 gap-8 mt-10">
               {projects.map((proj, index) => {
                 return (
                   <div key={index} className="flex justify-center">
-                    <Project link={proj.link} img={proj.img} />
+                    <Project link={proj.link} img={proj.img} size={proj.size} />
                   </div>
                 );
               })}

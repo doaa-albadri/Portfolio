@@ -14,6 +14,7 @@
 .intro {
   padding: 5rem;
   transition: background-color 0.3s ease;
+  font-family: "Montserrat", serif;
 }
 
 .h5:hover {

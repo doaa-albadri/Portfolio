@@ -5,7 +5,10 @@ import styles from "./Intro.module.css";
 export default function Intro() {
   return (
     <div style={{ width: "100%", padding: "10%" }} className={styles.intro}>
-      <h5 className={`${styles.h5} `}>Hi, I'm Doaa. Nice to meet you.</h5>
+      <h5 className={`${styles.h5} `}>
+        Hi, I'm Doaa,{" "}
+        <span style={{ color: "#66cccc" }}> a Frontend Web Developer</span>.
+      </h5>
 
       <h6 className={styles.h6}>
         My web development journey started out of curiosity and interest, and
